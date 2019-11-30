@@ -6,7 +6,7 @@
   padding: 10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .o-content {
     background-color: #3a3a3a;
     color: white;
@@ -37,7 +37,7 @@ body {
 
 .u-page-wrapper {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 768px;
   padding: .5rem 1rem;
   padding-bottom: 2rem;
   min-height: calc(100vh - 100px);
@@ -218,7 +218,7 @@ body {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .b-timeline:before {
     display: none;
   }
@@ -312,7 +312,7 @@ body {
   background-color: transparent;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .m-event-tech {
     display: block;
   }
