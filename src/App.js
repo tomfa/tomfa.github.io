@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Timeline } from './Components/Timeline';
+import { TopScreen } from './Components/TopScreen';
 
 const App = () => {
   const events = [
@@ -35,6 +36,7 @@ const App = () => {
   ];
   return (
     <div className="App">
+      <TopScreen />
       <Timeline events={events.filter(e => !e.muted)} />
     </div>
   );
