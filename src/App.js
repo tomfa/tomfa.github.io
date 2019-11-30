@@ -47,7 +47,7 @@ const App = () => {
     },
   ];
   return (
-    <div className="App">
+    <div>
       <TopScreen />
       <Timeline events={events.filter(e => !e.muted)} />
     </div>
