@@ -6,7 +6,6 @@ import { size } from '../styles';
 import './Timeline.css';
 
 import { ImageCarousell } from './ImageCarousell';
-import { withParagraphs } from '../utils';
 
 const TechBadges = ({ technologies }) => (
   <div className="m-event-tech">
@@ -33,7 +32,7 @@ const Icon = () => (
   </div>
 );
 
-const Description = styled.p`
+const EventDescription = styled.p`
   font-size: 1rem;
   color: #dddddd;
   margin-top: 0px;
@@ -53,7 +52,7 @@ const Content = ({ event }) => (
       thumbnail={event.thumbnail}
       images={event.images}
     />
-    {withParagraphs(event.description, 'a-event-text')}
+    <EventDescription>{event.description}</EventDescription>
   </div>
 );
 
