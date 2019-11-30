@@ -182,12 +182,6 @@ body {
   margin: 0 0 0 -55px;
 }
 
-.a-image-wrapper {
-  max-width: 100%;
-  max-height: 300px;
-  overflow: hidden;
-}
-
 .a-image {
   max-width: 100%;
 }
@@ -319,15 +313,6 @@ body {
 }
 
 @media screen and (min-width: 800px) {
-  .a-image-wrapper img {
-    transition: filter 0.3s;
-    filter: brightness(0.6);
-  }
-
-  .a-image-wrapper img:hover {
-    filter: brightness(1);
-  }
-
   .m-event-tech {
     display: block;
   }

@@ -32,11 +32,11 @@ const Icon = () => (
 
 const Content = ({ event }) => (
   <div className="m-event-block">
-    {event.thumbnail && (
-      <div key={event.id} className="a-image-wrapper">
-        <ImageCarousell thumbnail={event.thumbnail} images={event.images} />
-      </div>
-    )}
+    <ImageCarousell
+      key={event.id}
+      thumbnail={event.thumbnail}
+      images={event.images}
+    />
     {withParagraphs(event.description, 'a-event-text')}
   </div>
 );
