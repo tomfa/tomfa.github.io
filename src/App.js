@@ -9,7 +9,13 @@ const App = () => {
       id: 1,
       year: 2019,
       month: 'January',
-      tech: ['git', 'heroku', 'aws', 'serverless', 'elm'],
+      tech: {
+        'language': 'elm',
+        'platform': 'heroku',
+        'deployment': 'aws',
+        'library': 'elm-ui',
+        'projectType': 'personal',
+      },
       link: 'https://github.com',
       description: 'There was once upon a time a great warrior named Johnsson',
       thumbnail:
@@ -23,7 +29,13 @@ const App = () => {
       id: 2,
       year: 2019,
       month: 'January',
-      tech: ['git', 'heroku', 'aws', 'serverless', 'elm'],
+      tech: {
+        'language': 'elm',
+        'platform': 'heroku',
+        'deployment': 'aws',
+        'library': 'elm-ui',
+        'projectType': 'personal',
+      },
       link: 'https://github.com',
       description: 'There was once upon a time a great warrior named Johnsson',
       thumbnail:

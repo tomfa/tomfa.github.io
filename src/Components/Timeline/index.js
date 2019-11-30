@@ -6,16 +6,7 @@ import { size } from '../styles';
 import './Timeline.css';
 
 import { ImageCarousell } from './ImageCarousell';
-
-const TechBadges = ({ technologies }) => (
-  <div className="m-event-tech">
-    {technologies
-      .sort((a, b) => a.length - b.length)
-      .map(tech => (
-        <span className={`a-tech-badge a-tech-badge-${tech}`}>{tech}</span>
-      ))}
-  </div>
-);
+import { TechBadges } from './TechBadge';
 
 const TimeStamp = ({ month, year }) => (
   <time className="m-event-date">

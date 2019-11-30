@@ -78,22 +78,6 @@ body {
 }
 
 
-.m-event-tech {
-  display: none;
-  width: 25%;
-  padding-right: 70px;
-  position: absolute;
-  bottom: 0;
-  font-size: 0.8rem;
-  cursor: pointer;
-  transition: filter 0.5s;
-  filter: brightness(0.6);
-}
-
-.m-event-tech:hover {
-  filter: brightness(1);
-}
-
 .a-event-date-month, .a-event-date-year {
   display: block;
   text-align: right;
@@ -185,38 +169,6 @@ body {
 .a-image {
   max-width: 100%;
 }
-
-.a-tech-badge {
-  display: block;
-  color: #dddddd;
-  font-weight: 200;
-  margin-top: 4px;
-  padding: 2px;
-  text-align: right;
-  padding-right: 0.5rem;
-  border-right: 1rem solid rgba(255, 255, 255, 0.2);
-}
-
-.a-tech-badge-git { /* Type of project */
-  border-color: #93CC6A;
-}
-
-.a-tech-badge-aws { /* Type of deployment */
-  border-color: #679943;
-}
-
-.a-tech-badge-elm { /* Type of language */
-  border-color: #FFFC9E;
-}
-
-.a-tech-badge-heroku { /* Type of library ? */
-  border-color: #E2DEFF;
-}
-
-.a-tech-badge-serverless {
-  border-color: #6A78CC;
-}
-
 
 @media screen and (max-width: 768px) {
   .b-timeline:before {
