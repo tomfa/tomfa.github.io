@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { size } from '../styles';
+import { size } from '../../utils/styles';
 
 import './Timeline.css';
 

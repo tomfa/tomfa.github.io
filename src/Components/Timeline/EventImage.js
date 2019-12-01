@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Carousel, { Modal, ModalGateway } from 'react-images';
 import styled from 'styled-components';
 
-import { size } from '../styles';
+import { size } from '../../utils/styles';
 
 const Image = styled.img`
   width: 100%;
