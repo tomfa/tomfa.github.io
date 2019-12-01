@@ -5,7 +5,7 @@ import { size } from '../styles';
 
 import './Timeline.css';
 
-import { ImageCarousell } from './ImageCarousell';
+import { EventImage } from './EventImage';
 import { TechBadges } from './TechBadge';
 
 const TimeStamp = ({ month, year }) => (
@@ -30,7 +30,7 @@ const EventDescription = styled.p`
   margin-bottom: 0px;
   padding-left: 1rem;
   padding-right: 1rem;
-  
+
   &:first-of-type {
     padding-top: 0.8rem;
   }
@@ -38,10 +38,11 @@ const EventDescription = styled.p`
 
 const Content = ({ event }) => (
   <div className="m-event-block">
-    <ImageCarousell
+    <EventImage
       key={event.id}
-      thumbnail={event.thumbnail}
-      images={event.images}
+      image={event.thumbnail}
+      carousellImages={event.images}
+      link={event.link}
     />
     <EventDescription>{event.description}</EventDescription>
   </div>

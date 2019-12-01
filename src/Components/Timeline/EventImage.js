@@ -19,30 +19,39 @@ const Image = styled.img`
   }
 `;
 
-const CarousellWrapper = styled.div`
+const ImageWrapper = styled.div`
   max-width: 100%;
   max-height: 300px;
   overflow: hidden;
 `;
 
-export const ImageCarousell = ({ images, thumbnail }) => {
-  const hasImages = images && images.length;
-  const alt = hasImages && images[0].caption;
+export const EventImage = ({ image, carousellImages, link }) => {
+  const hasImages = carousellImages && carousellImages.length;
   const [isOpen, setOpen] = useState(false);
 
+  if (!hasImages) {
+    return (
+      <ImageWrapper>
+        <a href={link}>
+          <Image src={image} alt={link} />
+        </a>
+      </ImageWrapper>
+    );
+  }
+
   return (
-    <CarousellWrapper>
-      <Image src={thumbnail} alt={alt} onClick={() => setOpen(true)} />
+    <ImageWrapper>
+      <Image src={image} alt={link} onClick={() => setOpen(true)} />
       <ModalGateway>
-        {hasImages && isOpen ? (
+        {isOpen ? (
           <Modal onClose={() => setOpen(false)}>
             <Carousel
-              views={images.map(url => ({ src: url }))}
+              views={carousellImages.map(url => ({ src: url, alt: link }))}
               isFullscreen={true}
             />
           </Modal>
         ) : null}
       </ModalGateway>
-    </CarousellWrapper>
+    </ImageWrapper>
   );
 };

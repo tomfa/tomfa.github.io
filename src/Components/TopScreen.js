@@ -40,7 +40,7 @@ export const TopScreen = () => {
   return <FullScreen>
     <AwesomeSVG width={size.width} height={size.height} />
     <FixedBottomLink href="#timeline">
-      <Label>Timeline</Label>
+      <Label>Side projects</Label>
     </FixedBottomLink>
   </FullScreen>
 };
