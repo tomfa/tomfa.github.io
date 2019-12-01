@@ -26,14 +26,15 @@ const CarousellWrapper = styled.div`
 `;
 
 export const ImageCarousell = ({ images, thumbnail }) => {
-  const alt = images[0].caption;
+  const hasImages = images && images.length;
+  const alt = hasImages && images[0].caption;
   const [isOpen, setOpen] = useState(false);
 
   return (
     <CarousellWrapper>
       <Image src={thumbnail} alt={alt} onClick={() => setOpen(true)} />
       <ModalGateway>
-        {isOpen ? (
+        {hasImages && isOpen ? (
           <Modal onClose={() => setOpen(false)}>
             <Carousel
               views={images.map(url => ({ src: url }))}
