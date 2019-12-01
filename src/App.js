@@ -10,7 +10,7 @@ const App = () => {
       month: 'November',
       tech: {
         language: ['JS', 'SVG'],
-        deployment: 'Github Pages',
+        platform: 'Github Pages',
         library: 'React',
         projectType: 'Personal',
       },
@@ -70,7 +70,6 @@ const App = () => {
       year: 2016,
       month: 'November',
       tech: {
-        deployment: 'Github Pages',
         platform: 'AWS',
         library: ['S3', 'Cloudfront'],
         projectType: 'Workshop',
@@ -169,7 +168,7 @@ const App = () => {
       month: 'April',
       tech: {
         language: ['HTML', 'CSS', 'JS'],
-        deployment: 'WebFaction',
+        platform: 'WebFaction',
         projectType: 'Personal project',
       },
       link: 'http://www.webutvikling.org/tekled/',
@@ -183,7 +182,7 @@ const App = () => {
       tech: {
         language: ['HTML', 'CSS'],
         library: 'jQuery',
-        deployment: 'WebFaction',
+        platform: 'WebFaction',
         projectType: 'Personal project',
       },
       link: 'https://github.com/tomfa/ababrygg',

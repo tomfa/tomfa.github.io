@@ -52,17 +52,12 @@ const PlatformBadge = styled(Badge)`
   border-color: #93cc6a;
 `;
 
-const DeploymentBadge = styled(Badge)`
-  border-color: #6a78cc;
-`;
-
 const TechBadge = ({ category, label }) => {
   const badgeMapping = {
     projectType: ProjectTypeBadge,
     library: LibraryBadge,
     language: LanguageBadge,
     platform: PlatformBadge,
-    deployment: DeploymentBadge,
   };
 
   const Component = badgeMapping[category];
