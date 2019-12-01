@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 
 const colorPalettes = [
-  ['#110133', '#00918e', '#4dd599', '#ffdc34'],
+  ['#d77fa1', '#e6b2c6', '#fef6fb', '#d6e5fa'],
   ['#ffa259', '#fe6845', '#fa4252', '#91bd3a'],
   ['#561f55', '#8b2f97', '#cf56a1', '#fcb2bf'],
-  ['#dff6f0', '#46b3e6', '#4d80e4', '#2e279d'],
+  ['#f8b195', '#f67280', '#c06c84', '#6c5b7b'],
   ['#f8b195', '#f67280', '#4d80e4', '#6c5b7b'],
-  ['#39375b', '#745c97', '#d597ce', '#f5b0cb'],
+  ['#beebe9', '#beebe9', '#fffdf9', '#ffe3ed'],
   ['#9be3de', '#beebe9', '#fffdf9', '#ffe3ed'],
   ['#eafbea', '#6f9a8d', '#1f6650', '#ea5e5e'],
+  ['#51eaea', '#ffdbc5', '#ff9d76', '#ef4339'],
+  ['#621055', '#b52b65', '#ed6663', '#ffa372'],
 ];
 
 const getRandomPalette = () => {
