@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { size } from '../../utils/styles';
+import { usePalette } from '../../utils/palette';
 
 const BadgesWrapper = styled.div`
   display: none;
@@ -34,37 +35,19 @@ const Badge = styled.span`
   border-width: 0;
   border-right-width: 1rem;
   border-style: solid;
-`;
-
-const ProjectTypeBadge = styled(Badge)`
-  border-color: #e2deff;
-`;
-
-const LibraryBadge = styled(Badge)`
-  border-color: #fffc9e;
-`;
-
-const LanguageBadge = styled(Badge)`
-  border-color: #679943;
-`;
-
-const PlatformBadge = styled(Badge)`
-  border-color: #93cc6a;
+  border-color: ${props => props.color || '#dddddd'};
 `;
 
 const TechBadge = ({ category, label }) => {
-  const badgeMapping = {
-    projectType: ProjectTypeBadge,
-    library: LibraryBadge,
-    language: LanguageBadge,
-    platform: PlatformBadge,
-  };
+  const [palette] = usePalette();
+  const color = {
+    projectType: palette[0],
+    library: palette[1],
+    language: palette[2],
+    platform: palette[3],
+  }[category];
 
-  const Component = badgeMapping[category];
-  if (!Component) {
-    console.log(label, category);
-  }
-  return <Component>{label}</Component>;
+  return <Badge color={color}>{label}</Badge>;
 };
 
 export const TechBadges = ({ technologies }) => {
