@@ -61,7 +61,15 @@ export const TechBadges = ({ technologies }) => {
   return (
     <BadgesWrapper>
       {badges
-        .sort((a, b) => a.label.length - b.label.length)
+        .sort((a, b) => {
+          if (a.category < b.category) {
+            return -1;
+          }
+          if (a.category > b.category) {
+            return 1;
+          }
+          return 0;
+        })
         .map(tech => (
           <TechBadge
             key={tech.label}
