@@ -23,6 +23,9 @@ const SVGCircle = styled.circle`
   transition: all 1.5s;
   cursor: pointer;
 
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+
   &:hover {
     opacity: 0.5;
   }
