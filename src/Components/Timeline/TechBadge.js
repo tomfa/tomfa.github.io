@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { size } from '../../utils/styles';
-import { usePalette } from '../../utils/palette';
 
 const BadgesWrapper = styled.div`
   display: none;
@@ -38,19 +37,24 @@ const Badge = styled.span`
   border-color: ${props => props.color || '#dddddd'};
 `;
 
-const TechBadge = ({ category, label }) => {
-  const [palette] = usePalette();
-  const color = {
-    projectType: palette[0],
-    library: palette[1],
-    language: palette[2],
-    platform: palette[3],
-  }[category];
-
-  return <Badge color={color}>{label}</Badge>;
+const sortTech = (a, b) => {
+  if (a.category < b.category) {
+    return -1;
+  }
+  if (a.category > b.category) {
+    return 1;
+  }
+  return 0;
 };
 
 export const TechBadges = ({ technologies }) => {
+  const colorMap = {
+    projectType: '#eafbea',
+    library: '#6f9a8d',
+    language: '#1f6650',
+    platform: '#ea5e5e',
+  };
+
   const badges = [];
   Object.entries(technologies).forEach(([key, values]) => {
     if (typeof values === 'string') {
@@ -60,23 +64,11 @@ export const TechBadges = ({ technologies }) => {
   });
   return (
     <BadgesWrapper>
-      {badges
-        .sort((a, b) => {
-          if (a.category < b.category) {
-            return -1;
-          }
-          if (a.category > b.category) {
-            return 1;
-          }
-          return 0;
-        })
-        .map(tech => (
-          <TechBadge
-            key={tech.label}
-            category={tech.category}
-            label={tech.label}
-          />
-        ))}
+      {badges.sort(sortTech).map(tech => (
+        <Badge key={tech.label} color={colorMap[tech.category]}>
+          {tech.label}
+        </Badge>
+      ))}
     </BadgesWrapper>
   );
 };
