@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import styled from 'styled-components';
-import { size } from '../utils/styles';
+import { size } from '../../utils/styles';
 
 const HalloumiBurger = styled.span`
   position: fixed;
