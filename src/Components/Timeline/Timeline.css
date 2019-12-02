@@ -94,8 +94,6 @@ body {
 /* Right content */
 .m-event-block {
   margin-top: 0;
-  margin-left: -10px;
-  margin-right: -10px;
   margin-bottom: 15px;
   background: #101010;
   padding-bottom: 1rem;

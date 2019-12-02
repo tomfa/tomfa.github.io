@@ -11,11 +11,18 @@ const HalloumiBurger = styled.span`
   z-index: 10;
   width: 40px;
   height: 40px;
-  background-color: rgba(0, 0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  transform: ${props => (props.isOpen ? `rotate(${props.direction}deg)` : '')};
 
   & > * {
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+  }
+
+  @media ${size.medium} {
+    &:hover {
+      transform: ${props => `rotate(${props.direction}deg)`};
+    }
   }
 `;
 
@@ -58,10 +65,14 @@ const Bottom = styled(HalloumiFilling)`
   }
 `;
 
-export const HalloumiButton = ({ isOpen, onClick }) => {
+export const HalloumiButton = ({
+  isOpen,
+  onClick,
+  arrowDirection = 0,
+} = {}) => {
   return (
-    <HalloumiBurger>
-      <Bread viewBox="-4 -6 10 12" onClick={onClick}>
+    <HalloumiBurger isOpen={isOpen} direction={arrowDirection}>
+      <Bread viewBox="-5 -6 10 12" onClick={onClick}>
         <Top isOpen={isOpen} x1="-4" y1="-3" x2="4" y2="-3"></Top>
         <Middle isOpen={isOpen} x1="-4" y1="0" x2="4" y2="0"></Middle>
         <Bottom isOpen={isOpen} x1="-4" y1="3" x2="4" y2="3"></Bottom>
