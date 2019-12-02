@@ -33,7 +33,7 @@ export const EventImage = ({ image, carousellImages, link }) => {
     return (
       <ImageWrapper>
         <a href={link}>
-          <Image src={image} alt={link} />
+          <Image src={image} alt={link} loading="lazy" />
         </a>
       </ImageWrapper>
     );

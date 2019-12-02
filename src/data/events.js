@@ -169,7 +169,7 @@ export const eventData = [
       library: ['jQuery', 'Django'],
       projectType: 'Paid project',
     },
-    thumbnail: '/images/iraki.png',
+    thumbnail: '/images/iraki.jpg',
     link: 'https://www.irakinutrition.com/',
     description: 'Created home page for nutritionist',
   },
