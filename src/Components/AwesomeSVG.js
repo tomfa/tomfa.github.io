@@ -43,7 +43,8 @@ export const AwesomeSVG = ({ width, height }) => {
       {positions.map(([cx, cy], i) => (
         <SVGCircle
           key={i}
-          transform={`translate(${cx}, ${cy})`}
+          cx={cx}
+          cy={cy}
           r={radiuses[i]}
           stroke="#212121"
           strokeWidth="1"
