@@ -4,7 +4,7 @@ import { HalloumiButton } from './HalloumiButton';
 import { SideBar } from './SideBar';
 
 export const Menu = () => {
-  const [isOpen, setOpen] = useState(true);
+  const [isOpen, setOpen] = useState(false);
 
   return (
     <>
