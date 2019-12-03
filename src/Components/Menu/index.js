@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { HalloumiButton } from './HalloumiButton';
 import { SideBar } from './SideBar';
 
-export const Index = () => {
+export const Menu = () => {
   const [isOpen, setOpen] = useState(true);
 
   return (

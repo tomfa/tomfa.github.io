@@ -1,15 +1,15 @@
 import React from 'react';
 
-import { Timeline } from './Components/Timeline';
-import { TopScreen } from './Components/TopScreen';
 import { eventData } from './data/events';
+import { Timeline } from './Components/Timeline';
+import { BubbleScreen } from './Components/Bubbles';
 import { Menu } from './Components/Menu';
 
 const App = () => {
   return (
     <div>
       <Menu />
-      <TopScreen />
+      <BubbleScreen />
       <Timeline events={eventData} />
     </div>
   );

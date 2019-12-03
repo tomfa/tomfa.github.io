@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { usePalette } from '../utils/palette';
+
+import { usePalette } from '../../utils/palette';
+
 
 const getRandomSizeDistrubution = ({ width, height, count }) => {
   const maxRadius = Math.floor((2 * Math.min(width, height)) / count);
@@ -34,7 +36,7 @@ const SVGCircle = styled.circle`
 export const AwesomeSVG = ({ width, height }) => {
   const [palette, setPalette] = usePalette();
   const count = palette.length * 3;
-  const [radiuses] = useState(
+  const [radiuses, setRadiuses] = useState(
     getRandomSizeDistrubution({ width, height, count })
   );
   const [positions, setPositions] = useState(
@@ -53,7 +55,11 @@ export const AwesomeSVG = ({ width, height }) => {
           strokeWidth="1"
           fill={palette[i % palette.length]}
           onClick={() => {
-            setPositions(getRandomPositions({ width, height, count }));
+            if (Math.random() > 0.1) {
+              setPositions(getRandomPositions({ width, height, count }));
+            } else {
+              setRadiuses(getRandomSizeDistrubution({ width, height, count }));
+            }
             if (Math.random() > 0.93) {
               setPalette();
             }

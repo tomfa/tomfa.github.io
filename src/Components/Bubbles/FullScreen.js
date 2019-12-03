@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { size } from '../utils/styles';
+import { size } from '../../utils/styles';
 
 const FullscreenWrapper = styled.div`
   width: 100%;
@@ -19,10 +19,8 @@ const InnerFullScreen = styled.div`
   width: 100%;
 `;
 
-const FullScreen = ({ children, results = [] }) => (
+export const FullScreen = ({ children }) => (
   <FullscreenWrapper>
     <InnerFullScreen>{children}</InnerFullScreen>
   </FullscreenWrapper>
 );
-
-export default FullScreen;
