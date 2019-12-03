@@ -45,13 +45,12 @@ export const eventData = [
     month: 'November',
     tech: {
       language: 'Python',
-      platform: 'AWS',
-      library: ['Terraform', 'Django'],
+      library: ['Django', 'GraphQL'],
       projectType: 'Meetup',
     },
     link: 'https://github.com/tomfa/graphy',
     thumbnail: '/images/graphql.png',
-    description: 'GraphQL talk at Python meetup held by at Kolonial',
+    description: 'GraphQL talk at Oslo Python meetup',
   },
   {
     year: 2017,
@@ -71,6 +70,7 @@ export const eventData = [
     tech: {
       language: 'JS',
       library: ['Node', 'Hubot', 'Slack'],
+      platform: ['Heroku'],
       projectType: 'For fun',
     },
     link: 'https://github.com/tomfa/botanist',
@@ -93,13 +93,14 @@ export const eventData = [
     month: 'November',
     tech: {
       platform: 'AWS',
-      library: ['S3', 'Cloudfront'],
+      language: ['JS'],
+      library: ['React', 'S3', 'Cloudfront'],
       projectType: 'Workshop',
     },
     link: 'https://github.com/tomfa/aws-frontend-workshop',
     thumbnail: '/images/workshop-aws-frontend.png',
     title: 'AWS frontend workshop',
-    description: 'Workshop held at Bekk consulting on deploying on AWS',
+    description: 'Workshop held at Bekk consulting on deploying with AWS',
   },
   {
     year: 2016,
@@ -107,7 +108,7 @@ export const eventData = [
     tech: {
       platform: ['Heroku'],
       language: ['JS', 'MongoDB'],
-      library: ['Node', 'React', 'PWA'],
+      library: ['Node', 'React + Redux'],
       projectType: 'For fun',
     },
     link: 'https://www.dutytime.org',
@@ -121,6 +122,7 @@ export const eventData = [
     tech: {
       platform: ['Heroku'],
       language: 'Bash',
+      library: ['Django'],
       projectType: 'For fun',
     },
     link: 'https://tomfa.github.io/herango-bash',
@@ -163,10 +165,11 @@ export const eventData = [
   },
   {
     year: 2014,
-    month: 'August',
+    month: 'September',
     tech: {
       language: ['JS', 'Python'],
       library: ['jQuery', 'Django'],
+      platform: ['Webfaction'],
       projectType: 'Paid project',
     },
     thumbnail: '/images/iraki.jpg',
@@ -177,7 +180,7 @@ export const eventData = [
     year: 2014,
     month: 'February',
     tech: {
-      language: ['HTML', 'CSS', 'JS'],
+      language: ['CSS', 'JS'],
       library: ['jQuery'],
       projectType: 'Paid project',
     },
@@ -193,7 +196,7 @@ export const eventData = [
     year: 2013,
     month: 'April',
     tech: {
-      language: ['HTML', 'CSS', 'JS'],
+      language: ['CSS', 'JS'],
       platform: 'WebFaction',
       projectType: 'For fun',
     },
@@ -206,7 +209,7 @@ export const eventData = [
     year: 2013,
     month: 'February',
     tech: {
-      language: ['HTML', 'CSS'],
+      language: ['CSS'],
       library: 'jQuery',
       platform: 'WebFaction',
       projectType: 'For fun',
