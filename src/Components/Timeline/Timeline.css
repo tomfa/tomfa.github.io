@@ -126,17 +126,20 @@ body {
 }
 
 /* The triangle */
-.m-event-block:after {
-  right: 100%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-right-color: #757575;
-  border-width: 10px;
-  top: 10px;
+@media screen and (min-width: 768px) {
+  .m-event-block:after {
+
+    right: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: #757575;
+    border-width: 10px;
+    top: 10px;
+  }
 }
 
 .m-event {
@@ -189,11 +192,7 @@ body {
   }
 
   .m-event-block:after {
-    right: auto;
-    left: 20px;
-    border-right-color: transparent;
-    border-bottom-color: #000000;
-    top: -20px;
+    content: '';
   }
 
   .a-event-icon {

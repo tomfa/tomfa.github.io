@@ -4,32 +4,43 @@ import styled from 'styled-components';
 import { size } from '../../utils/styles';
 
 const BadgesWrapper = styled.div`
-  display: none;
-  width: 25%;
-  padding-right: 70px;
-  position: absolute;
+  display: block;
+  text-align: right;
   bottom: 0;
   font-size: 0.8rem;
-  cursor: pointer;
-  transition: filter 0.5s;
+  margin-bottom: 0.3rem;
 
   @media ${size.large} {
-    display: block;
+    width: 25%;
+    padding-right: 70px;
+    position: absolute;
+    margin-bottom: 0;
   }
 `;
 
 const Badge = styled.span`
-  display: block;
+  display: inline-block;
   color: #dddddd;
   font-weight: 200;
-  margin-top: 4px;
+  margin-bottom: 4px;
   padding: 2px;
   text-align: right;
-  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
   border-width: 0;
-  border-right-width: 1rem;
+  border-left-width: 1rem;
   border-style: solid;
   border-color: ${props => props.color || '#dddddd'};
+
+  @media ${size.large} {
+    padding-left: 0;
+    padding-right: 0.5rem;
+    margin-bottom: 0px;
+    margin-top: 4px;
+    border-left-width: 0;
+    border-right-width: 1rem;
+    display: block;
+  }
 `;
 
 const sortTech = (a, b) => {
