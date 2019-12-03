@@ -11,7 +11,7 @@ const Image = styled.img`
 
   @media ${size.large} {
     transition: filter 0.3s;
-    filter: brightness(0.6);
+    filter: brightness(0.9);
 
     &:hover {
       filter: brightness(1);

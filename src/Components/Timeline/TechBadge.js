@@ -12,11 +12,6 @@ const BadgesWrapper = styled.div`
   font-size: 0.8rem;
   cursor: pointer;
   transition: filter 0.5s;
-  filter: brightness(0.6);
-
-  &:hover {
-    filter: brightness(1);
-  }
 
   @media ${size.large} {
     display: block;
