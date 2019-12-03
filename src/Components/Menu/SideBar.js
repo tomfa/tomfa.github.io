@@ -2,25 +2,20 @@ import React from 'react';
 
 import styled from 'styled-components';
 import { size } from '../../utils/styles';
-import {
-  GitHubIcon,
-  LinkedInIcon,
-  InstagramIcon,
-  ExternalIcon,
-} from './Icons';
+import { GitHubIcon, LinkedInIcon, InstagramIcon, ExternalIcon } from './Icons';
 
 const SideBarWrap = styled.nav`
   padding: 20px;
   position: fixed;
   line-height: 1.4rem;
   left: 100vw;
-  top: 100vh;
+  bottom: -100vh;
   background-color: rgba(0, 0, 0, 1);
   min-width: 100vw;
   transition: transform 0.4s;
   z-index: 8;
   transform: ${props =>
-    props.visible ? 'translateX(-100%) translateY(-100%)' : ''};
+    props.visible ? 'translateX(-100%) translateY(-100vh)' : ''};
 
   @media ${size.medium} {
     background-color: rgba(0, 0, 0, 1);
@@ -74,7 +69,7 @@ export const SideBar = ({ visible }) => {
         though the new positions are random. Why is that?
       </p>
       <p>
-        Some of my other projects is seen below, and there's random notes at my{' '}
+        A few other side projects are found below, and there's random notes at my{' '}
         <Link href="http://notes.webutvikling.org">
           <LinkText>personal blog</LinkText>
           <ExternalIcon size={14} color="#0d82e8" />
