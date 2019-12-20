@@ -14,6 +14,17 @@ export const eventData = [
   },
   {
     year: 2019,
+    month: 'October',
+    tech: {
+      library: ['GTD methodology'],
+      projectType: 'Workshop',
+    },
+    link: 'https://slides.com/tomasfagerbekk/deck-6',
+    thumbnail: '/images/gtd-workshop.png',
+    description: 'Mini workshop on stress free efficiency',
+  },
+  {
+    year: 2019,
     month: 'September',
     tech: {
       language: ['Python'],
