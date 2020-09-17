@@ -1,5 +1,18 @@
 export const eventData = [
   {
+    year: 2020,
+    month: 'September',
+    tech: {
+      language: ['TypeScript'],
+      platform: 'Github Pages',
+      library: ['React', 'NextJS', 'AWS'],
+      projectType: 'For fun',
+    },
+    link: 'https://ihasabucket.it',
+    thumbnail: '/images/ihasabucket.png',
+    description: 'Click tutorial for deploying frontend apps on AWS',
+  },,
+  {
     year: 2019,
     month: 'November',
     tech: {
