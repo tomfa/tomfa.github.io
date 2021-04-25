@@ -70,7 +70,7 @@ export const eventData = [
     tech: {
       language: 'Python',
       library: ['Django', 'GraphQL'],
-      projectType: 'Meetup',
+      projectType: 'Talk',
     },
     link: 'https://github.com/tomfa/graphy',
     thumbnail: '/images/graphql.png',
@@ -101,6 +101,7 @@ export const eventData = [
     thumbnail: '/images/botanist.png',
     description: 'Slack bot: Reporting on Sentry, Github++',
   },
+
   {
     year: 2017,
     month: 'April',
@@ -111,6 +112,18 @@ export const eventData = [
     thumbnail: '/images/otovo.png',
     description: 'Started full time job as Software Engineer',
     muted: true,
+  },
+  {
+    year: 2017,
+    month: 'March',
+    tech: {
+      library: ['GraphQL'],
+      projectType: 'Talk',
+    },
+    link: 'https://vimeopro.com/bekk/bekk-open-fagdag-2017/video/207489801',
+    thumbnail: '/images/graphql-talk.png',
+    description: 'Held talk on GraphQL at Bekk Open Conference',
+    muted: false,
   },
   {
     year: 2016,
@@ -124,7 +137,7 @@ export const eventData = [
     link: 'https://github.com/tomfa/aws-frontend-workshop',
     thumbnail: '/images/workshop-aws-frontend.png',
     title: 'AWS frontend workshop',
-    description: 'Workshop held at Bekk consulting on deploying with AWS',
+    description: 'Workshop held at Bekk Consulting on deploying with AWS',
   },
   {
     year: 2016,
