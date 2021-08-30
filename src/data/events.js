@@ -1,6 +1,17 @@
 export const eventData = [
   {
     year: 2020,
+    month: 'November',
+    tech: {
+      library: ['Encrypting files in git'],
+      projectType: 'Talk',
+    },
+    link: 'https://slides.com/tomasfagerbekk/git-crypt/',
+    thumbnail: '/images/git-crypt.png',
+    description: 'Mini workshop on encrypting sensitive files in git',
+  },
+  {
+    year: 2020,
     month: 'September',
     tech: {
       language: ['TypeScript'],
