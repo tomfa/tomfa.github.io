@@ -1,9 +1,20 @@
 export const eventData = [
   {
+    year: 2021,
+    month: 'August',
+    tech: {
+      library: ['NextJS'],
+      projectType: 'Talk',
+    },
+    link: 'https://slides.com/tomasfagerbekk/nextjs/',
+    thumbnail: '/images/nextjs.png',
+    description: 'Tech talk on why we should be using NextJS',
+  },
+  {
     year: 2020,
     month: 'November',
     tech: {
-      library: ['Encrypting files in git'],
+      library: ['git-crypt'],
       projectType: 'Talk',
     },
     link: 'https://slides.com/tomasfagerbekk/git-crypt/',
