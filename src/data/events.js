@@ -11,7 +11,20 @@ export const eventData = [
     link: 'https://ihasabucket.it',
     thumbnail: '/images/ihasabucket.png',
     description: 'Click tutorial for deploying frontend apps on AWS',
-  },,
+  },
+  {
+    year: 2020,
+    month: 'August',
+    tech: {
+      language: ['TypeScript'],
+      platform: 'NPM',
+      library: ['git', 'node'],
+      projectType: 'For fun',
+    },
+    link: 'https://github.com/tomfa/git-csv-timesheet',
+    thumbnail: '/images/git-csv.jpg',
+    description: 'Node script that analyzes your git repositories to create a timesheet',
+  },
   {
     year: 2019,
     month: 'November',
