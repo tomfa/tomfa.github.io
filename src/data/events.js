@@ -1,6 +1,18 @@
 export const eventData = [
   {
     year: 2021,
+    month: 'October',
+    tech: {
+      platform: ['Vercel', 'GCP'],
+      library: ['NextJS', 'Firebase'],
+      projectType: 'Open source',
+    },
+    link: 'https://reddit-clone-tomfa.vercel.app',
+    thumbnail: '/images/reddit-clone.png',
+    description: 'Open sourced Reddit clone',
+  },
+  {
+    year: 2021,
     month: 'August',
     tech: {
       library: ['NextJS'],
