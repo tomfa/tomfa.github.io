@@ -23,6 +23,8 @@ yarn test
 ```
 
 ### Deploy
+Deployment is done automatically on push to `source` branch
+
 ```
 yarn deploy
 ```

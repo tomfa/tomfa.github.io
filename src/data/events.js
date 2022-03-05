@@ -1,5 +1,17 @@
 export const eventData = [
   {
+    year: 2022,
+    month: 'March',
+    tech: {
+      platform: ['Github'],
+      library: ['NextJS', 'Storybook'],
+      projectType: 'Open source',
+    },
+    link: 'https://tomfa.github.io/next-storybook',
+    thumbnail: '/images/storybook.png',
+    description: 'Automated Storybook setup',
+  },
+  {
     year: 2021,
     month: 'October',
     tech: {
