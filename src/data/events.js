@@ -73,6 +73,19 @@ export const eventData = [
   },
   {
     year: 2020,
+    month: 'June',
+    tech: {
+      language: ['Javascript'],
+      platform: 'Slack',
+      library: ['node'],
+      projectType: 'For fun',
+    },
+    link: 'https://github.com/tomfa/slackbot-starter',
+    thumbnail: '/images/slash.png',
+    description: 'A starter kit for Slack chat bot using @slack/bolt',
+  },
+  {
+    year: 2020,
     month: 'March',
     tech: {
       language: ['Python'],
