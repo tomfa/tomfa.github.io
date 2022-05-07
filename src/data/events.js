@@ -260,6 +260,19 @@ export const eventData = [
     muted: true,
   },
   {
+    year: 2015,
+    month: 'January',
+    tech: {
+      language: ['JS', 'Python'],
+      library: ['jQuery', 'Django'],
+      platform: ['Heroku'],
+      projectType: 'Paid project',
+    },
+    link: 'https://whispering-beyond-8136.herokuapp.com/',
+    thumbnail: '/images/trondheimtechguide.png',
+    description: 'Paid project, web site for trondheim startup conference',
+  },
+  {
     year: 2014,
     month: 'September',
     tech: {
