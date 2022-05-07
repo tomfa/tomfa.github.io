@@ -72,6 +72,19 @@ export const eventData = [
     description: 'Node script that analyzes your git repositories to create a timesheet',
   },
   {
+    year: 2020,
+    month: 'March',
+    tech: {
+      language: ['Python'],
+      platform: 'Heroku',
+      library: ['flask'],
+      projectType: 'For fun',
+    },
+    link: 'https://github.com/tomfa/echo/',
+    thumbnail: '/images/flask.png',
+    description: 'Simple python server that echos and logs information about incoming HTTP requests',
+  },
+  {
     year: 2019,
     month: 'November',
     tech: {
