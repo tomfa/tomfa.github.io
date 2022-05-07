@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://tomfa.github.io/precache-manifest.78f16ace11fee1348e4bf900695645ee.js"
+  "https://tomfa.github.io/precache-manifest.bafca3dfaab3fa1637ad9d2576ea6da7.js"
 );
 
 self.addEventListener('message', (event) => {
