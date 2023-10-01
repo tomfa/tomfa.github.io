@@ -354,6 +354,18 @@ export const eventData = [
     title: 'Ababrygg: Students brewing beer',
     description: 'Static page for a student group',
   },
+  {
+    year: 2012,
+    month: 'September',
+    tech: {
+      language: ['AutoHotkey'],
+      projectType: 'Workshop',
+    },
+    link: 'https://gist.github.com/tomfa/81042352f705c746d7ddb8d192a91afe',
+    thumbnail: '/images/ababrygg.png',
+    title: 'Autohotkey: Windows scripting language',
+    description: 'Held workshop on automating Windows with AutoHotkey',
+  }
 ]
   .map((e, i) => {
     e.id = i;
